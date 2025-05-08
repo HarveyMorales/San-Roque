@@ -1,5 +1,92 @@
 /* Global Styles */
 :root {
+    --promo-card-bg: #fff;
+    --promo-card-radius: 18px;
+    --promo-card-shadow: 0 2px 18px #007bff22;
+    --promo-card-padding: 2.5rem 2rem;
+    --promo-img-radius: 12px;
+    --promo-img-shadow: 0 2px 12px #007bff22;
+}
+
+.promo-card {
+    text-align: center;
+    max-width: 600px;
+    background: var(--promo-card-bg);
+    border-radius: var(--promo-card-radius);
+    box-shadow: var(--promo-card-shadow);
+    padding: var(--promo-card-padding);
+    position: relative;
+    z-index: 1;
+    margin: 2rem auto 0 auto;
+}
+
+.promo-logo {
+    width: 120px;
+    margin-bottom: 1.5rem;
+    border-radius: var(--promo-img-radius);
+    box-shadow: var(--promo-img-shadow);
+    background: #fff;
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+}
+
+.promo-banner {
+    width: 90%;
+    max-width: 500px;
+    border-radius: var(--promo-img-radius);
+    box-shadow: var(--promo-img-shadow);
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+    height: auto;
+}
+
+.wsp-main-btn {
+    background: #25d366;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border-radius: 40px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    box-shadow: 0 2px 8px #0002;
+    transition: background 0.2s;
+    font-weight: 600;
+    margin-top: 1.2rem;
+}
+.wsp-main-btn i {
+    font-size: 1.5rem;
+}
+.wsp-main-btn:hover {
+    background: #20ba5a;
+}
+
+@media (max-width: 900px) {
+    .promo-card {
+        padding: 1.5rem 0.7rem;
+    }
+    .promo-banner {
+        max-width: 98vw;
+    }
+}
+@media (max-width: 600px) {
+    .promo-card {
+        padding: 1rem 0.2rem;
+        max-width: 97vw;
+    }
+    .promo-logo {
+        width: 80px;
+    }
+    .promo-banner {
+        max-width: 99vw;
+    }
+}
+
+/* --- Resto de estilos existentes debajo --- */
+/* Global Styles */
+:root {
     --primary-color: #00a651;
     --secondary-color: #008a45;
     --text-color: #333;
