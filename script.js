@@ -38,28 +38,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
 
-    // Mobile menu toggle
-    hamburger.addEventListener('click', (e) => {
-        e.stopPropagation(); // Prevent click from bubbling up
-        hamburger.classList.toggle('active');
-        navLinks.classList.toggle('active');
-    });
+    if (hamburger && navLinks) {
+        // Add ARIA attributes for accessibility
+        hamburger.setAttribute('aria-label', 'Abrir/cerrar menú de navegación');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.setAttribute('role', 'button');
 
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-        }
-    });
+        // Mobile menu toggle
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent click from bubbling up
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', hamburger.classList.contains('active'));
+        });
 
-    // Close menu when clicking on a navigation link
-    navLinks.addEventListener('click', (e) => {
-        if (e.target.tagName === 'A') {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-        }
-    });
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Close menu when clicking on a navigation link
+        navLinks.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

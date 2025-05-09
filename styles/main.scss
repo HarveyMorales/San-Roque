@@ -1,0 +1,15 @@
+// SCSS principal para San Roque
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'footer';
+@import 'home';
+@import 'components';
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f9fb;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}

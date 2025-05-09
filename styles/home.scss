@@ -1,0 +1,35 @@
+// Home (main content) SCSS
+.hero {
+  background: $primary-color;
+  color: #fff;
+  padding: 3rem 0 2rem 0;
+  .slide-logo {
+    height: 60px;
+    margin-bottom: 1.2rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.7rem;
+  }
+  p {
+    font-size: 1.15rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.quick-access, .obras-sociales, .facilities {
+  margin: 3rem 0 2rem 0;
+}
+
+.quick-access-card {
+  background: #fff;
+  border: 2px solid #eee;
+  border-radius: $border-radius;
+  transition: background 0.2s, border-color 0.2s;
+  cursor: pointer;
+  &:hover {
+    background: transparent;
+    border-color: $primary-color;
+  }
+}
+
