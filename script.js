@@ -1,18 +1,57 @@
 // Initialize Swiper Slider
-const swiper = new Swiper('.swiper', {
-    loop: true,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+if (typeof Swiper !== 'undefined') {
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}
+
+// Funcionalidad menú hamburguesa y navegación
+function setupMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        // Cierra el menú al hacer click en un enlace
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    setupMenu();
+    // Hacer todos los botones de acción navegables
+    document.querySelectorAll('.cta-button').forEach(btn => {
+        btn.addEventListener('click', e => {
+            const href = btn.getAttribute('href');
+            if (href && href !== '#') {
+                window.location.href = href;
+            }
+        });
+    });
+    // Botón WhatsApp flotante
+    const wspFloat = document.querySelector('.wsp-float');
+    if (wspFloat) {
+        wspFloat.style.display = 'block';
+    }
 });
 
 // Mobile Navigation
@@ -163,3 +202,13 @@ document.addEventListener('DOMContentLoaded', () => {
         handleNavbarScroll(); // Initial check
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+  
+    hamburger.addEventListener('click', function() {
+      this.classList.toggle('active');
+      navLinks.classList.toggle('open');
+    });
+  });

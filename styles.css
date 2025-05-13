@@ -416,7 +416,7 @@ main {
 }
 
 .nav-links {
-    display: flex;
+    display: none;
     list-style: none;
 }
 
@@ -445,13 +445,16 @@ main {
     transition: transform 0.3s ease;
 }
 
+
+
 /* Hero Slider */
 .hero-slider {
     position: relative;
     height: calc(100vh - 64px); /* Subtract navbar height */
     min-height: 500px;
     overflow: hidden;
-    background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+    /* background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%); */
+    background: none;
 }
 
 .swiper {
@@ -577,6 +580,7 @@ main {
         height: auto;
         min-height: 400px;
         padding: 2rem 1rem;
+        background: none !important;
     }
     
     .slide-content {
@@ -586,6 +590,7 @@ main {
         margin: 2rem auto;
         transform: none;
         left: auto;
+        background: rgba(0,0,0,0.35); /* Menos opacidad, más visibilidad de la imagen */
     }
     
     .slide-content h1 {
@@ -1675,8 +1680,6 @@ footer {
         font-size: 1.4rem;
     }
 }
-Optimized CSS Code
-Here's your optimized CSS with significant improvements:
 
 css
 /* Global Variables and Base Styles */
