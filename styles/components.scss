@@ -1,0 +1,39 @@
+// Components SCSS
+.cta-button, .secondary-button {
+  @include flex-center;
+  background: $primary-color;
+  color: #fff;
+  border: none;
+  border-radius: $border-radius;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.18s;
+  &:hover {
+    background: $accent-color;
+  }
+}
+
+.wsp-float {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  background: $secondary-color;
+  color: #fff;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  @include box-shadow();
+  transition: background 0.2s;
+  &:hover {
+    background: $accent-color;
+  }
+}

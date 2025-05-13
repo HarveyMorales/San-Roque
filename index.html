@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Roque - Atención Médica Avanzada</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QZ6rdk8z5M8JrIoVNewc19hXtOD87o5iV/mQKM1nvLKknj1mhp8KQZ6jIW3R9q5V" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="./images/logo/logo.png" alt="San Roque Logo" height="40">
+      </a>
+    </div>
+    <button class="hamburger" aria-label="Abrir/cerrar menú de navegación" aria-expanded="false" aria-controls="main-menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="main-menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="about.html">Nosotros</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="departamentos.html">Departamentos</a></li>
+      <li><a href="medicos.html">Médicos</a></li>
+      <li><a href="apross.html">APROSS</a></li>
+      <li><a href="pami.html">PAMI</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+    <div class="wsp-float" style="display: none;">
+        <a href="https://wa.me/5493541423456" target="_blank" title="Contactar por WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <section id="home" class="hero" data-aos="fade-right">
+        <div class="hero-slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="./images/logo/logo.png" alt="San Roque Logo" class="slide-logo">
+                            <h1>Sanatorio San Roque - Atención Médica Avanzada</h1>
+                            <p>Experimente atención médica de vanguardia con nuestras instalaciones de última generación</p>
+                            <div class="cta-buttons">
+                                <a href="cita.html" class="cta-button">Agendar Cita</a>
+                                <a href="servicios.html" class="cta-button">Ver Servicios</a>
+                            </div>
+                        </div>
+                        <div class="slide-image">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/08/05/29/operation-1807543_1280.jpg" alt="Personal Médico">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h1>Tecnología de Vanguardia</h1>
+                            <p>Equipos médicos de última generación para su atención</p>
+                            <div class="cta-buttons">
+                                <a href="#facilities" class="cta-button">Ver Equipamiento</a>
+                            </div>
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/healthcare/360_F_918600242_dW92xIsGUVIEBq7ORp6oUChAQN6ph1Ws.jpg" alt="Tecnología Médica">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h1>Instalaciones Modernas</h1>
+                            <p>Salas de atención y recuperación diseñadas para su comodidad y bienestar</p>
+                            <div class="cta-buttons">
+                                <a href="#facilities" class="cta-button">Ver Instalaciones</a>
+                            </div>
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/healthcare/istockphoto-1352251604-612x612.jpg" alt="Instalaciones Modernas">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quick-access" class="quick-access">
+        <h2>Comodidades</h2>
+        <div class="quick-access-grid">
+            <div class="quick-access-card">
+                <i class="fas fa-ambulance"></i>
+                <h3>Guardia Médica</h3>
+                <p>Atención 24/7</p>
+            </div>
+            <div class="quick-access-card">
+                <i class="fas fa-flask"></i>
+                <h3>Laboratorio</h3>
+                <p>Resultados rápidos</p>
+            </div>
+            <div class="quick-access-card">
+                <i class="fas fa-baby"></i>
+                <h3>Pediatría</h3>
+                <p>Cuidado infantil</p>
+            </div>
+            <div class="quick-access-card">
+                <i class="fas fa-x-ray"></i>
+                <h3>Imágenes</h3>
+                <p>Diagnóstico por imágenes</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="obras-sociales" class="obras-sociales">
+        <h2>Promoción de Chequeos para Afiliados</h2>
+        <div class="obras-sociales-grid">
+            <div class="obra-card promo-card">
+                <img src="images/apross/images.png" alt="Logo APROSS" class="promo-logo">
+                <h3>APROSS</h3>
+                <p>Afiliados APROSS: accedé a tu control médico preventivo gratuito cada 6 meses. ¡Solicitá tu turno!</p>
+                <a href="apross.html" class="cta-button">Más sobre APROSS</a>
+            </div>
+            <div class="obra-card promo-card">
+    <img src="images/PAMI/logopami.jpg" alt="Logo PAMI" class="promo-logo">
+    <h3>PAMI</h3>
+    <p>Afiliados PAMI: realizar chequeos médicos periódicos es clave para una vida saludable. ¡Solicitá tu turno y controlate cada 6 meses!</p>
+    <a href="pami.html" class="cta-button">Más sobre PAMI</a>
+</div>
+        </div>
+    </section>
+
+    <section id="facilities" class="facilities" data-aos="fade-right">
+        <h2>Nuestras Instalaciones</h2>
+        <div class="facilities-grid">
+            <div class="facility-card">
+                <img src="images/salamoderna/istockphoto-1298375809-612x612.jpg" alt="Salas Modernas">
+                <div class="facility-content">
+                    <h3>Salas Modernas</h3>
+                    <p>Instalaciones cómodas y equipadas con tecnología de última generación</p>
+                </div>
+            </div>
+            <div class="facility-card">
+                <img src="images/Quirofaninteligente/quirofanos-inteligentes-featured-image-20200625-etkho-hospital-engineering.jpg" alt="Quirófanos Inteligentes">
+                <div class="facility-content">
+                    <h3>Quirófanos Inteligentes</h3>
+                    <p>Salas quirúrgicas con tecnología avanzada para procedimientos seguros</p>
+                </div>
+            </div>
+            <div class="facility-card">
+                <img src="images/Laboratorio/Sin título.jpg" alt="Laboratorio">
+                <div class="facility-content">
+                    <h3>Laboratorios de Vanguardia</h3>
+                    <p>Equipamiento de última generación para diagnósticos precisos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5493541423456" class="wsp-float" target="_blank" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-phone"></i> (03541)-421351</p>
+<p><i class="fas fa-envelope"></i> info@sanroque.com.ar</p>
+<p><i class="fas fa-map-marker-alt"></i> Pellegrini 75, X5152, Villa Carlos Paz, Córdoba.</p>
+<iframe src="https://www.google.com/maps?q=Pellegrini+75,+Villa+Carlos+Paz,+Córdoba&output=embed" width="100%" height="120" style="border:0;border-radius:8px;margin-top:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <a href="servicios.html">Nuestros Servicios</a>
+                <a href="departamentos.html">Departamentos</a>
+                <a href="medicos.html">Encontrar Médico</a>
+                <a href="cita.html">Agendar Cita</a>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 San Roque. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    </main>
+    <script src="script.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

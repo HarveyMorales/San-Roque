@@ -1,0 +1,154 @@
+header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+header .navbar .logo img {
+  height: 40px;
+}
+header .navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+header .navbar .nav-links li a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+header .navbar .nav-links li a:hover {
+  color: #20ba5a;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  padding: 2rem 0 1rem 0;
+}
+footer .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer .footer-section {
+  flex: 1 1 200px;
+  min-width: 180px;
+  margin-bottom: 1.2rem;
+}
+footer .footer-section h3 {
+  color: #007bff;
+  margin-bottom: 0.7rem;
+}
+footer .footer-section a, footer .footer-section p {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+footer .footer-section .social-links a {
+  color: #fff;
+  margin-right: 0.7rem;
+  font-size: 1.4rem;
+}
+footer .footer-section .social-links a:hover {
+  color: #007bff;
+}
+footer .footer-bottom {
+  text-align: center;
+  color: #bbb;
+  font-size: 0.95rem;
+  margin-top: 1.2rem;
+}
+
+.hero {
+  background: #007bff;
+  color: #fff;
+  padding: 3rem 0 2rem 0;
+}
+.hero .slide-logo {
+  height: 60px;
+  margin-bottom: 1.2rem;
+}
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.7rem;
+}
+.hero p {
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
+}
+
+.quick-access, .obras-sociales, .facilities {
+  margin: 3rem 0 2rem 0;
+}
+
+.quick-access-card {
+  background: #fff;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  transition: background 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+.quick-access-card:hover {
+  background: transparent;
+  border-color: #007bff;
+}
+
+.cta-button, .secondary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.18s;
+}
+.cta-button:hover, .secondary-button:hover {
+  background: #20ba5a;
+}
+
+.wsp-float {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1333333333);
+  transition: background 0.2s;
+}
+.wsp-float:hover {
+  background: #20ba5a;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f8f9fb;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,26 @@
+// Header SCSS
+header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  .navbar {
+    @include flex-center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    .logo img {
+      height: 40px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+      li a {
+        color: $primary-color;
+        text-decoration: none;
+        font-weight: 500;
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+}
